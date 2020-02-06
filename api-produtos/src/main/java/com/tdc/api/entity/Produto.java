@@ -1,4 +1,4 @@
-package com.tdc.api.vo;
+package com.tdc.api.entity;
 
 import io.swagger.annotations.ApiModelProperty;
 

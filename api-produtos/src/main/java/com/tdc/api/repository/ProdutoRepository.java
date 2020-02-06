@@ -1,8 +1,7 @@
 package com.tdc.api.repository;
 
-import com.tdc.api.vo.Produto;
+import com.tdc.api.entity.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository

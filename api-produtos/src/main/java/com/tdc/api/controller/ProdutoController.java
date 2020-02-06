@@ -1,7 +1,7 @@
 package com.tdc.api.controller;
 
 import com.tdc.api.repository.ProdutoRepository;
-import com.tdc.api.vo.Produto;
+import com.tdc.api.entity.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
