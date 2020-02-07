@@ -4,6 +4,7 @@ services:
   mysql-db:
     container_name: MySqlDB
     image: mysql:latest
+    restart: always
     environment:
       MYSQL_DATABASE: tdc
       MYSQL_ROOT_PASSWORD: root
@@ -20,6 +21,7 @@ services:
   api-produtos:
     container_name: ApiProdutos
     image: gladson21/api-produtos:v1
+    restart: always
     volumes:
       - ./api-produtos/src/main/resources/application-docker.yml:/home/binarios/application.yml
     ports:
