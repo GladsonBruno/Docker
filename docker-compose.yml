@@ -7,23 +7,21 @@ services:
     environment:
       MYSQL_DATABASE: tdc
       MYSQL_ROOT_PASSWORD: root
-#    command: --default-authentication-plugin=mysql_native_password
     volumes:
       - ./db/:/docker-entrypoint-initdb.d
-#      - ./db/:/var/lib/mysql
     ports:
       - "3306:3306"
-#    healthcheck: 
-#      test: mysqladmin ping -h 127.0.0.1 -u root --password=$$MYSQL_ROOT_PASSWORD
-#      interval: 30s
-#      timeout: 10s
-#      retries: 5
+    healthcheck: 
+      test: mysqladmin ping -h 127.0.0.1 -u root --password=$$MYSQL_ROOT_PASSWORD
+      interval: 30s
+      timeout: 10s
+      retries: 5
 
   api-produtos:
     container_name: ApiProdutos
     image: gladson21/api-produtos:v1
     volumes:
-      - ./api-produtos/src/main/resources/application.yml:/home/binarios/application.yml
+      - ./api-produtos/src/main/resources/application-docker.yml:/home/binarios/application.yml
     ports:
       - "8080:8080"
     depends_on: 
