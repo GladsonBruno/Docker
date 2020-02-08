@@ -11,13 +11,7 @@ Depois de muitas horas gastas e várias garrafas de café consumidas você final
 - O servidor não possuía a variável de ambiente Z.
 - A aplicação precisa da versão 11 do Java porém o servidor hospeda outra aplicação que precisa exatamente da versão 8 do Java e os problemas só vão aumentando.
 
-Este cenário é o que chamamos tipicamente de Dependency Hell.
-
-Esse foi um dos grandes problemas que os containers buscam resolver.
-
-Inicialmente os containers surgiram para melhorar a forma como os desenvolvedores distribuem as aplicações que eles criam.<br/>
-Mais tarde surgiu o Docker com o intuito de padronizar a criação, execução e distribuição de containers.
-
+Este cenário é o que chamamos tipicamente de Dependency Hell, e é um dos grandes problemas que os Containers Docker buscam resolver.
 
 # Mas enfim, o que é Docker?
 
