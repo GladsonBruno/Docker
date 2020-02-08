@@ -324,5 +324,5 @@ Em nosso arquivo docker-compose.yml não foi necessário definir uma configuraç
 
 ## Comandos úteis do Docker Compose
 - **docker-compose stop**: Para a execução de nossos containers
-- **docker-compose down**: Para e remove nossos containers em execução
 - **docker-compose rm**: Remove nossos containers que estiverem parados
+- **docker-compose down**: Para e remove nossos containers em execução
