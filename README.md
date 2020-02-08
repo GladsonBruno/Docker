@@ -253,9 +253,11 @@ Após o comando ser finalizado poderemos ver nossa imagem Docker em nossa conta 
 Os Orquestradores de Container de certa forma podem ser vistos como ferramentas mágicas que podem criar e gerenciar nosso containers de forma mais fácil, falaremos brevemente de um deles que é o Docker Compose.<br/>
 
 ## Docker Compose
-O Docker Compose nos permite trasferir toda a lógica do comando de criação de um container para um arquivo YML de forma que o próprio Docker Compose possa gerenciar nossos containers de acordo com o quer for configurado no arquivo .YML<br/>
+O Docker Compose nos permite transferir toda a lógica do comando de criação de um container para um arquivo YML de forma que o próprio Docker Compose possa gerenciar nossos containers de acordo com o quer for configurado no arquivo .YML<br/>
 Por padrão o arquivo é chamado de ``docker-compose.yml`` e possui uma estrutura semelhante a esta:
 ```java
+version: 'x.x'
+
 services:
   service-1:
     container_name: Name
