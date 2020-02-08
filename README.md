@@ -187,7 +187,7 @@ Com este comando estamos realizando o build de nossa imagem Docker seguindo os p
 Possuímos algumas opções em nosso comando sendo elas:
 - **-t**: Nos permite definir o nome da imagem.
 - **--network=host**: Informa ao Docker para utilizar a rede de nosso host durante o build de nossa aplicação.
-- **.**:  Define qual será o diretório utilizado para buscar nosso Dockerfile e nosso código fonte.
+- **.**:  Define que o diretório atual será utilizado para buscar nosso Dockerfile e nosso código fonte.
 
 Caso o Dockerfile esteja com outro nome você pode utilizar a opção **-f** para definir o nome do Dockerfile.
 
@@ -195,7 +195,7 @@ Quando este comando finalizar teremos a imagem ``api-produtos:v1`` criada, podem
 
 # Executando nossa imagem Docker
 
-Para utilizar nossa imagem Docker criada podemos usar o seguinte comando:
+Para utilizar nossa imagem Docker criada navegue até o diretório raiz do projeto clonado, após isso podemos usar o seguinte comando:
 ```
 # Comando para Linux
 docker run --name ApiProdutos -v /$(pwd)/api-produtos/src/main/resources/application.yml:/home/binarios/application.yml --network=rede-api-produtos -p 8080:8080 -d api-produtos:v1
