@@ -106,15 +106,16 @@ O código fonte da aplicação pode ser obtida neste repositório https://github
 Após clonar o repositório em sua máquina local navegue até dentro dele com seu terminal.
 
 # Criando nossa rede no Docker
-O Docker nos possibilita criar um isolamento de red, com isso podemos fazer com que nossos container trabalhem em redes isoladas ou conjuntas, iremos criar agora uma rede conjunta para nossa aplicação e nossa base de dados, para isso utilizaremos o seguinte comando:
+O Docker nos possibilita criar um isolamento de rede, com isso podemos fazer com que nossos container trabalhem em redes isoladas ou conjuntas, iremos criar agora uma rede conjunta para nossa aplicação e nossa base de dados, para isso utilizaremos o seguinte comando:
 ```
 docker network create rede-api-produtos
 ```
-Com o comando acima criamos uma rede chamada api-produtos, para listar todas as redes gerenciadas pelo Docker utilize o comando ``docker network ls``.<br/>
+Com o comando acima criamos uma rede chamada **rede-api-produtos**.<br/>
+Para listar todas as redes gerenciadas pelo Docker utilize o comando ``docker network ls``.<br/>
 
 # Criando nosso container de Banco de dados.
 
-Primeiro precisaremos de uma base de dados MySql, por sorte já existe uma imagem criada no Dockerhub que pode ser vista no seguinte link assim como sua documentação: https://hub.docker.com/_/mysql
+Primeiro precisaremos de uma base de dados MySql, por sorte já existe uma imagem criada no Dockerhub que pode ser encontrada no seguinte link assim como sua documentação: https://hub.docker.com/_/mysql
 
 Parar criarmos nosso container MySql utilizaremos o seguinte comando na pasta raiz de nosso repositório clonado:
 ```
@@ -133,7 +134,10 @@ Podemos notar alguns parâmetros novos em nosso comando docker run, sendo eles:<
 - **-d**: Define que nosso container será executado em segundo plano, se não especificarmos essa opção nossa aba do terminal ficará por conta da execução do container.
 
 
-Após a criação de nosso container podemos executar o seguinte comando para verificar os logs de nosso container: ``docker logs -f mysql-db``<br/>
+Após a criação de nosso container podemos executar o seguinte comando para verificar os logs de nosso container: <br/>
+```
+docker logs -f mysql-db
+``` 
 Para sair da visualização de logs basta pressionar ``CTRL + C``
 
 
