@@ -129,7 +129,7 @@ docker run --name MySqlDB -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=tdc -v /
 Podemos notar alguns parâmetros novos em nosso comando docker run, sendo eles:<br/>
 - **--name**: Define o nome do container
 - **-e**: Define as variáveis de ambiente de nosso container.
-- **-v**: Define um mapeamento de volume no qual estamos passando para o container My SQL nosso script de criação de nossa base de dados.
+- **-v**: Define um mapeamento de volume no qual estamos passando para o container My SQL nosso script de criação de nossa base de dados. A diferença entre o comando para Windows e Linux é que no Windows é necessário informar o Path absoluto no mapemaneto de volume, se estiver utilizando Windows realize a correção do Path de acordo com o Path de sua máquina.
 - **--network=rede-api-produtos**: Com esta opção especificamos que nosso container faz parte da **rede-api-produtos**, como não fizemos a exposição da porta de nosso container o mesmo poderá ser acessado apenas dentro de nossa rede interna.
 - **-d**: Define que nosso container será executado em segundo plano, se não especificarmos essa opção nossa aba do terminal ficará por conta da execução do container.
 
@@ -201,7 +201,8 @@ docker run --name ApiProdutos -v /$(pwd)/api-produtos/src/main/resources/applica
 docker run --name ApiProdutos -v /c/Users/glads/OneDrive/Documentos/TDC/api-produtos/src/main/resources/application.yml:/home/binarios/application.yml --network=rede-api-produtos -p 8080:8080 -d api-produtos:v1
 ```
 
-Observe que agora estamos utilizando a opção **-p** em nosso comando, esta opção define um mapeamento de porta para que possamos acessar a porta 8080 de nosso container na porta 8080 de nosso host.
+Observe que agora estamos utilizando a opção **-p** em nosso comando, esta opção define um mapeamento de porta para que possamos acessar a porta 8080 de nosso container na porta 8080 de nosso host.<br/>
+A diferença entre o comando para Windows e Linux é que no Windows é necessário informar o Path absoluto no mapemaneto de volume, se estiver utilizando Windows realize a correção do Path de acordo com o Path de sua máquina.
 
 # Testando nossa aplicação
 
