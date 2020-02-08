@@ -202,7 +202,7 @@ docker run --name ApiProdutos -v /c/Users/glads/OneDrive/Documentos/TDC/api-prod
 ```
 
 Observe que agora estamos utilizando a opção **-p** em nosso comando, esta opção define um mapeamento de porta para que possamos acessar a porta 8080 de nosso container na porta 8080 de nosso host.<br/>
-A diferença entre o comando para Windows e Linux é que no Windows é necessário informar o Path absoluto no mapemaneto de volume, se estiver utilizando Windows realize a correção do Path de acordo com o Path de sua máquina.
+A diferença entre o comando para Windows e Linux é que no Windows é necessário informar o Path absoluto no mapeamento de volume, se estiver utilizando Windows realize a correção do Path de acordo com o Path de sua máquina.
 
 # Testando nossa aplicação
 
