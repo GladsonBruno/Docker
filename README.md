@@ -201,6 +201,8 @@ docker run --name ApiProdutos -v /$(pwd)/api-produtos/src/main/resources/applica
 docker run --name ApiProdutos -v /c/Users/glads/OneDrive/Documentos/TDC/api-produtos/src/main/resources/application.yml:/home/binarios/application.yml --network=rede-api-produtos -p 8080:8080 -d api-produtos:v1
 ```
 
+Observe que agora estamos utilizando a opção **-p** em nosso comando, esta opção define um mapeamento de porta para que possamos acessar a porta 8080 de nosso container na porta 8080 de nosso host.
+
 # Testando nossa aplicação
 
 Após nosso container entrar em execução podemos acessar o seguinte endereço para testar se nossa API está funcionando: ``http://localhost:porta/swagger-ui.html``
