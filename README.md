@@ -21,12 +21,12 @@ Mais tarde surgiu o Docker com o intuito de padronizar a criação, execução e
 
 # Mas enfim, o que é Docker?
 
-O Docker é um solução para containerização(que é uma alternativa para as tradicionais máquinas virtuais) criada com o objetivo de facilitar o desenvolvimento, a implantação e a execução de aplicações em ambientes isolados. Foi desenhada especialmente para disponibilizar uma aplicação da forma mais rápida possível e com o mínimo de esforço para que a mesma esteja pronta para execução.
+O Docker é um solução para containerização(que é uma alternativa para as tradicionais máquinas virtuais) criada com o objetivo de facilitar o desenvolvimento, distribuição, implantação, execução de aplicações em ambientes isolados.
 
 
 #Containers vs Máquinas virtuais
 
-Enquanto as máquinas virtuais tem um sistema operacional completo e vários softwares e bibliotecas para executar as aplicações, os containers possuem apenas as aplicações e as bibliotecas dependentes, compartilhando uma mesma engine. 
+Enquanto as máquinas virtuais tem um sistema operacional completo e vários softwares e bibliotecas para executar as aplicações, os containers possuem apenas a aplicação e as bibliotecas e dependências da mesma, compartilhando uma mesma engine. 
 Diferente de uma máquina virtual os conteiners são bem menores e podem ser facilmente compartilhados e replicados.
 
 <img src="https://static.wixstatic.com/media/e61508_85e417916cd042f39181763c00ae94e7~mv2.jpg"/>
@@ -40,8 +40,7 @@ O Docker possui suporte para Windows, Linux e Mac
 
 ### Container
 
-São um método de virtualização em nível de sistema operacional que permite executar uma aplicação e suas dependências como processos e com recursos isolados que simulam uma máquina virtual.<br/>
-De uma forma simplificada, podemos dizer que um container é um ambiente isolado dentro de um servidor.<br/>
+É um método de virtualização em nível de sistema operacional que permite executar uma aplicação e suas dependências como processos e com recursos isolados que simulam uma máquina virtual.<br/>
 Os containers são isolados a nível de disco, memória, processamento e rede. Essa separação permite grande flexibilidade, onde ambientes distintos podem coexistir no mesmo host, sem causar qualquer problema. <br/>
 Um container do Docker pode ser criado através de Uma imagem.
 
