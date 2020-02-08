@@ -235,7 +235,7 @@ docker tag image-name new-image-name
 ```
 
 Após realizar a correção do nome de nossa imagem utilizaremos o comando ``docker push`` para realizar o upload de nossa imagem Docker para o Dockerhub:.<br/>
-No caso de nosso exemplo utilizaremo o comando: 
+No caso de nosso exemplo utilizaremos o comando: 
 ```
 docker push gladson21/api-produtos:v1
 ```
