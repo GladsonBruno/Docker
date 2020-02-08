@@ -136,7 +136,7 @@ Podemos notar alguns parâmetros novos em nosso comando docker run, sendo eles:<
 
 Após a criação de nosso container podemos executar o seguinte comando para verificar os logs de nosso container: <br/>
 ```
-docker logs -f mysql-db
+docker logs -f MySqlDB
 ``` 
 Para sair da visualização de logs basta pressionar ``CTRL + C``
 
