@@ -24,7 +24,7 @@ Mais tarde surgiu o Docker com o intuito de padronizar a criação, execução e
 O Docker é um solução para containerização(que é uma alternativa para as tradicionais máquinas virtuais) criada com o objetivo de facilitar o desenvolvimento, a implantação e a execução de aplicações em ambientes isolados. Foi desenhada especialmente para disponibilizar uma aplicação da forma mais rápida possível e com o mínimo de esforço para que a mesma esteja pronta para execução.
 
 
-#Containers vs Máquinas virtuais
+# Containers vs Máquinas virtuais
 
 Enquanto as máquinas virtuais tem um sistema operacional completo e vários softwares e bibliotecas para executar as aplicações, os containers possuem apenas as aplicações e as bibliotecas dependentes, compartilhando uma mesma engine. 
 Diferente de uma máquina virtual os conteiners são bem menores e podem ser facilmente compartilhados e replicados.
